@@ -1,0 +1,249 @@
+/*fontes*/
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Hind+Siliguri:wght@500&display=swap");
+
+* {
+  font-family: "Cantarell", sans-serif;
+}
+body {
+  background-image: url("/Concession%C3%A1riaDeCarros/public/img/DestaquesBanner/Fundo/fundov.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*Barra de navegação*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+.navbar-brand {
+  margin-right: 50px;
+  justify-self: end;
+}
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.nav-item {
+  margin-left: 20px;
+  font-weight: 500;
+}
+.navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(214, 66, 66);
+}
+.btn-pesquisar {
+  background-color: rgb(196, 31, 31);
+  color: white;
+  border-color: darkred;
+}
+.btn-pesquisar:hover {
+  background-color: darkred;
+  border-color: darkred;
+}
+.btn-barra-pesquisa {
+  display: flex;
+  justify-self: end;
+}
+
+/*----LOGIN E CADASTRO----*/
+
+.container-principal_loginCadastro {
+  margin: 60px;
+  background-size: 100% 100%;
+  color: white;
+}
+.container-principal_loginCadastro .main {
+  background-color: rgba(224, 58, 58, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+}
+.container-principal_loginCadastro input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid goldenrod;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  color: white;
+}
+.container-principal_loginCadastro .form-group {
+  height: 50px;
+}
+
+.container-principal_loginCadastro label {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  top: 32px;
+  left: 5px;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.container-principal_loginCadastro .label-selecionada {
+  color: white;
+  position: relative;
+  font-size: 13px;
+  color: white;
+  top: 5px;
+  left: 5px;
+}
+
+.container-principal_loginCadastro button {
+  border: none;
+  background-color: goldenrod;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  width: 100px;
+  border-radius: 30px;
+  margin-left: 75%;
+  transition: 0.5s;
+  transform: translate(0px, 0px);
+}
+
+.container-principal_loginCadastro button:hover {
+  box-shadow: 0px 8px 15px -10px rgb(61, 61, 61);
+  transform: translate(0px, -3px);
+}
+
+.container-principal_loginCadastro .links {
+  font-size: 14px;
+  color: white;
+}
+#overlay {
+  background-color: #fff;
+  height: 500px;
+  width: 750px;
+  position: absolute;
+  transform: translate(0px, -25px);
+  border-radius: 25px;
+  background-image: url("/Concession%C3%A1riaDeCarros/public/img/DestaquesBanner/Fundo/LoginCadastroBanner.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  #overlay,
+  #Cadastrar {
+    display: none;
+  }
+  button {
+    margin-left: 65%;
+  }
+}
+
+/*----PERFIL FUNCIONÁRIOS----*/
+/*Mascote interativo*/
+
+.mascote-container .mascote {
+  width: 10%;
+  height: auto;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+.mascote-container {
+  width: 5%;
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+.mascote-container .fala {
+  z-index: 999;
+  position: fixed;
+  bottom: 55px;
+  right: 120px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid gold;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+  animation: fala 2s ease !important;
+  width: 400px;
+}
+.mascote-container .texto-fixo {
+  position: absolute !important;
+  left: 0 !important;
+  margin-top: 12px !important;
+  top: 50% !important;
+  width: 90% !important;
+  position: relative !important;
+  white-space: nowrap !important;
+  animation: fala 2s ease !important;
+}
+@keyframes fala {
+  0% {
+    width: 0px !important;
+  }
+  100% {
+    width: 400px !important;
+  }
+}
+
+/*PERFIL FUNCIONÁRIO*/
+#perfil-funcionario-container {
+  height: 50vh;
+}
+.perfil-funcionario {
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  margin: 60px;
+  padding: 60px;
+  margin-left: 190px;
+  box-shadow: 0px 0px 10px rgba(53, 34, 5, 0.5);
+  width: 50%;
+}
+#perfil-funcionario h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#perfil-funcionario h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#perfil-funcionario form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#perfil-funcionario select,
+#perfil-funcionario input[type="number"],
+#perfil-funcionario input[type="text"],
+#perfil-funcionario textarea,
+#perfil-funcionario button {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#perfil-funcionario button {
+  background-color: darkgoldenrod;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#perfil-funcionario button:hover {
+  background-color: goldenrod;
+  color: darkred;
+}
+
+/*-----CARROS Á VENDA------*/

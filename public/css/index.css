@@ -1,0 +1,136 @@
+body h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+/*Banner Principal*/
+#carouselExampleAutoplaying {
+  background-color: goldenrod;
+}
+
+/*Apresentação*/
+.apresentacao-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  background-color: darkred;
+  color: white;
+}
+.apresentacao-textos #titulo {
+  font-size: 60px;
+}
+.apresentacao-textos p {
+  margin: 20px;
+  width: 65%;
+}
+
+/*Sobre nós*/
+.sobre-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  margin: 60px;
+}
+.sobre-textos h3 {
+  font-size: 50px;
+}
+.sobre-textos p {
+  margin: 20px;
+  width: 65%;
+}
+
+/*Depoimentos*/
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  background-color: darkred;
+  color: white;
+}
+.depoimentos h3 {
+  font-size: 50px;
+}
+.depoimentos p {
+  margin: 20px;
+  width: 65%;
+}
+
+/*Destaques*/
+.Destaques-textos h3 {
+  margin: 20px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Destaques {
+  background-image: url(../img/DestaquesBanner/Fundo/FundoTemplo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+.carossel-carros-destaque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carrosel-carros {
+  display: flex;
+  transform: scale(1.2);
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  margin-top: -400px;
+  white-space: nowrap;
+}
+.carro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+}
+.carro img {
+  width: auto;
+  height: 300px;
+}
+/*.active {
+    transform: scale(1.1);
+}*/
+.portas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.porta-esquerda,
+.porta-direita {
+  width: 50%;
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
+  transform-origin: center;
+  position: relative;
+  z-index: 3;
+}
+.porta-esquerda {
+  transform: scaleX(0);
+  transform-origin: right center;
+}
+.porta-direita {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
