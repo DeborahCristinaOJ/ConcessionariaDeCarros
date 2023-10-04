@@ -42,7 +42,7 @@
                         <a class="nav-link" href="/Concession%c3%a1riaDeCarros/src/index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../src/view/login.php">Faça Login</a>
+                        <a class="nav-link" href="../src/view/login_cadastro.php">Faça Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Concession%c3%a1riaDeCarros/src/view/perfilFuncionario.php">Área de funcionários</a>

@@ -40,7 +40,7 @@
                         <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/login.php">Faça Login</a>
+                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/login_cadastro.php">Faça Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/perfilFuncionario.php">Área de funcionários</a>
@@ -63,14 +63,14 @@
         <form action="filtrar_veiculos.php" method="post">
             <select name="filtro_marca">
                 <option value="">Filtrar por Marca</option>
-                <option value="marca1">Marca 1</option>
-                <option value="marca2">Marca 2</option>
+                <option value="filtro_marca">Marca 1</option>
+                <option value="filtro_marca">Marca 2</option>
 
             </select>
             <select name="filtro_modelo">
                 <option value="">Filtrar por Modelo</option>
-                <option value="modelo1">Modelo 1</option>
-                <option value="modelo2">Modelo 2</option>
+                <option value="filtro_modelo">Modelo 1</option>
+                <option value="filtro_modelo">Modelo 2</option>
 
             </select>
             <input type="number" name="filtro_ano_min" placeholder="Ano Mínimo">
