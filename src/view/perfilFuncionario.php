@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Links CSS-->
-    <link rel="stylesheet" href="/Concession%C3%A1riaDeCarros/public/css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/Concession%C3%A1riaDeCarros/public/css/perfilFuncionario.css" type="text/css" media="screen">
 
 
 </head>
@@ -46,7 +46,7 @@
                         <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/login.php">Faça Login</a>
+                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/login_cadastro.php">Faça Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/perfilFuncionario.php">Área de funcionários</a>
@@ -85,12 +85,12 @@
         <h2>Cadastro de Veículo</h2>
         <form action="cadastrar_veiculo.php" method="post">
             <select name="marca">
-                <option value="marca1">Marca 1</option>
-                <option value="marca2">Marca 2</option>
+                <option value="marca">Marca 1</option>
+                <option value="marca">Marca 2</option>
             </select><br>
             <select name="modelo">
-                <option value="modelo1">Modelo 1</option>
-                <option value="modelo2">Modelo 2</option>
+                <option value="modelo">Modelo 1</option>
+                <option value="modelo">Modelo 2</option>
             </select><br>
             <input type="number" name="ano_fabricacao" placeholder="Ano de Fabricação" required><br>
             <input type="text" name="quilometragem" placeholder="Quilometragem" required><br>

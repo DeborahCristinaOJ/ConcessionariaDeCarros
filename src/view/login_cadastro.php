@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Links CSS-->
-    <link rel="stylesheet" href="/Concession%C3%A1riaDeCarros/public/css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/Concession%C3%A1riaDeCarros/public/css/login_cadastro.css" type="text/css" media="screen">
 
     <!--Links Js-->
     <script src="../../public/js/login.js"></script>

@@ -1,0 +1,97 @@
+body {
+  background-image: url("/Concession%C3%A1riaDeCarros/public/img/DestaquesBanner/Fundo/fundov.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*----LOGIN E CADASTRO----*/
+
+.container-principal_loginCadastro {
+  margin: 60px;
+  background-size: 100% 100%;
+  color: white;
+}
+.container-principal_loginCadastro .main {
+  background-color: rgba(224, 58, 58, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+}
+.container-principal_loginCadastro input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid goldenrod;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  color: white;
+}
+.container-principal_loginCadastro .form-group {
+  height: 50px;
+}
+
+.container-principal_loginCadastro label {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  top: 32px;
+  left: 5px;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.container-principal_loginCadastro .label-selecionada {
+  color: white;
+  position: relative;
+  font-size: 13px;
+  color: white;
+  top: 5px;
+  left: 5px;
+}
+
+.container-principal_loginCadastro button {
+  border: none;
+  background-color: goldenrod;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  width: 100px;
+  border-radius: 30px;
+  margin-left: 75%;
+  transition: 0.5s;
+  transform: translate(0px, 0px);
+}
+
+.container-principal_loginCadastro button:hover {
+  box-shadow: 0px 8px 15px -10px rgb(61, 61, 61);
+  transform: translate(0px, -3px);
+}
+
+.container-principal_loginCadastro .links {
+  font-size: 14px;
+  color: white;
+}
+#overlay {
+  background-color: #fff;
+  height: 500px;
+  width: 750px;
+  position: absolute;
+  transform: translate(0px, -25px);
+  border-radius: 25px;
+  background-image: url("/Concession%C3%A1riaDeCarros/public/img/DestaquesBanner/Fundo/LoginCadastroBanner.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  #overlay,
+  #Cadastrar {
+    display: none;
+  }
+  button {
+    margin-left: 65%;
+  }
+}
