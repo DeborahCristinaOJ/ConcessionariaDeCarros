@@ -1,0 +1,38 @@
+/*Barra de navegação*/
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.navbar-brand {
+    margin-right: 50px;
+    justify-self: end;
+}
+.navbar-nav {
+    display: flex;
+    list-style: none; 
+    margin-left: auto; 
+}
+.nav-item {
+    margin-left: 20px; 
+    font-weight: 500;
+}
+.navbar-nav .nav-item .nav-link{
+    color: black;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(214, 66, 66);
+}
+.btn-pesquisar {
+    background-color: rgb(196, 31, 31); 
+    color: white; 
+    border-color: darkred;
+  }
+.btn-pesquisar:hover {
+    background-color: darkred; 
+    border-color: darkred;
+}
+.btn-barra-pesquisa{
+    display: flex;
+    justify-self: end;
+}

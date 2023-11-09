@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +23,7 @@
 
 
 </head>
+
 <body>
 
 
@@ -62,21 +64,23 @@
         </div>
     </nav>
 
-        <!--Mascote interativo-->
-        <div class="mascote-container">
+    <!--Mascote interativo-->
+    <div class="mascote-container">
         <img src="/Concession%C3%A1riaDeCarros/public/img/Logo/FavIcon.png" alt="Mascote" id="mascote" class="mascote">
         <div class="fala" id="fala">
-        <div class="texto-fixo">
-            <b><p>Bem-vindo à área de funcionários.</p></b>
-            <p>Obrigado por trabalhar conosco!</p>
-        </div>
+            <div class="texto-fixo">
+                <b>
+                    <p>Bem-vindo à área de funcionários.</p>
+                </b>
+                <p>Obrigado por trabalhar conosco!</p>
+            </div>
         </div>
     </div>
 
     <!--Links Javascript-->
     <script src="/Concession%C3%A1riaDeCarros/public/js/perfilFuncionario.js"></script>
 
-<div id="perfil-funcionario" class="perfil-funcionario">
+    <div id="perfil-funcionario" class="perfil-funcionario">
         <h1>Perfil Funcionário</h1>
         <h2>Cadastro de Veículo</h2>
         <form action="cadastrar_veiculo.php" method="post">
@@ -99,6 +103,7 @@
             <button type="submit">Cadastrar Veículo</button>
         </form>
 
-</div>
+    </div>
 </body>
+
 </html>
