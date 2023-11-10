@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/perfilFuncionario.css?=1234" type="text/css" media="screen">
     <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/style.css?=1234" type="text/css" media="screen">
 
+    <!--Links Javascript-->
+    <script src="/ConcessionariaDeCarros-main/public/js/perfilFuncionario.js"></script>
 
 </head>
 
@@ -54,7 +56,7 @@
                     </li>
                 </ul>
                 <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <input name="pesquisar" id="pesquisar" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                     <button class="btn btn-outline-success btn-pesquisar my-2 my-sm-0" type="submit">Pesquisar</button>
                 </form>
             </div>
@@ -63,7 +65,7 @@
 
     <!--Mascote interativo-->
     <div class="mascote-container">
-        <img src="/Concession%C3%A1riaDeCarros/public/img/Logo/FavIcon.png" alt="Mascote" id="mascote" class="mascote">
+        <img src="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.png" alt="Mascote" id="mascote" class="mascote">
         <div class="fala" id="fala">
             <div class="texto-fixo">
                 <b>
@@ -74,21 +76,25 @@
         </div>
     </div>
 
-    <!--Links Javascript-->
-    <script src="/ConcessionariaDeCarros-main/public/js/perfilFuncionario.js"></script>
 
-    <div id="perfil-funcionario" class="perfil-funcionario">
-        <h1>Perfil Funcionário</h1>
+
+    <div id="perfil-veiculo" class="perfil-veiculo">
+        <h1>Perfil Veículo</h1>
         <h2>Cadastro de Veículo</h2>
-        <form action="cadastrar_veiculo.php" method="post">
-            <select name="marca">
-                <option value="marca">Marca 1</option>
-                <option value="marca">Marca 2</option>
+        <form id="frmVeiculo" method="post">
+            <select class="veiculoFrm" name="marca">
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Acura">Acura</option>
+                <option value="Infiniti">Infiniti</option>
             </select><br>
-            <select name="modelo">
-                <option value="modelo">Modelo 1</option>
-                <option value="modelo">Modelo 2</option>
-            </select><br>
+            <textarea name="modelo" placeholder="Modelo"></textarea><br>
             <input type="number" name="ano_fabricacao" placeholder="Ano de Fabricação" required><br>
             <input type="text" name="quilometragem" placeholder="Quilometragem" required><br>
             <input type="text" name="combustivel" placeholder="Combustível" required><br>
@@ -99,8 +105,11 @@
 
             <button type="submit">Cadastrar Veículo</button>
         </form>
-
     </div>
+
+
+
+
 </body>
 
 </html>

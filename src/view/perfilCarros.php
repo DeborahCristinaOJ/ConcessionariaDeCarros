@@ -53,7 +53,7 @@
                      </li>
                  </ul>
                  <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
-                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                     <input name="pesquisar" id="pesquisar" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                      <button class="btn btn-outline-success btn-pesquisar my-2 my-sm-0" type="submit">Pesquisar</button>
                  </form>
              </div>
@@ -62,28 +62,36 @@
 
      <div class="card">
          <div class="CarrosForm">
-             <h2>Listagem em Estoque</h2>
-             <form action="filtrar_veiculos.php" method="post">
+             <h1>Veja nossos carros à venda</h1>
+             <form id="perfilCarrosForm" method="post">
                  <select name="filtro_marca">
                      <option value="">Filtrar por Marca</option>
-                     <option value="filtro_marca">Marca 1</option>
-                     <option value="filtro_marca">Marca 2</option>
-
+                     <?php
+                        $marcasJaponesas = ["Toyota", "Honda", "Nissan", "Mitsubishi", "Lexus", "Mazda"];
+                        foreach ($marcasJaponesas as $marca) {
+                            echo "<option value=\"$marca\">$marca</option>";
+                        }
+                        ?>
                  </select>
                  <select name="filtro_modelo">
                      <option value="">Filtrar por Modelo</option>
-                     <option value="filtro_modelo">Modelo 1</option>
-                     <option value="filtro_modelo">Modelo 2</option>
-
+                     <?php
+                        $modelosJaponeses = [
+                            "Toyota Corolla", "Honda Civic", "Nissan Altima",
+                            "Mitsubishi Outlander", "Lexus RX", "Mazda CX-5"
+                        ];
+                        foreach ($modelosJaponeses as $modelo) {
+                            echo "<option value=\"$modelo\">$modelo</option>";
+                        }
+                        ?>
                  </select>
                  <input type="number" name="filtro_ano_min" placeholder="Ano Mínimo">
                  <input type="number" name="filtro_ano_max" placeholder="Ano Máximo">
                  <input type="number" name="filtro_preco_max" placeholder="Preço Máximo">
-                 <button type="submit">Filtrar</button>
+                 <button type="submit" onclick="filtrarCarros()">Filtrar</button>
              </form>
 
-
-             <button onclick="listarTodosVeiculos()">Listar Todos</button>
+             <button onclick="listarTodosVeiculos()" id="listarTodosBtn">Listar Todos</button>
          </div>
      </div>
 
@@ -135,7 +143,7 @@
 
      <div class="card">
          <div class="car-container">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Honda S800.png" alt="Car" class="car-image" onmouseover="showCarInfo()">
+             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Honda S800.png" alt="Car" class="car-image" id="HondaS800" onmouseover="showCarInfo()">
              <div class="car-info" id="carInfo">
                  <h2>Honda S800</h2>
                  <h6>Ano: 1968</h6>
@@ -143,7 +151,9 @@
                  <h6>Preço: R$ 115.751,78</h6>
                  <a href="#" class="buy-button">Comprar</a>
              </div>
-             <p>O S800 é um carro esportivo da Honda . Apresentado no Salão Automóvel de Tóquio de 1965 , o S800 substituiu o bem-sucedido Honda S600 como carro-imagem da empresa. Com um limite máximo de 9.500 rpm, é um dos carros esportivos de maior rotação produzidos para uso nas ruas. O S800 competiu com o Austin-Healey Sprite , MG Midget , Triumph Spitfire , Datsun Fairlady e Fiat 850 Spider .</p>
+             <p>O S800 é um carro esportivo da Honda . Apresentado no Salão Automóvel de Tóquio de 1965 , o S800 substituiu o bem-sucedido Honda S600 como carro-imagem da empresa. Com um limite máximo de 9.500 rpm, é um dos carros esportivos de maior rotação produzidos para uso nas ruas. O S800 competiu com o Austin-Healey Sprite, MG Midget , Triumph Spitfire , Datsun Fairlady e Fiat 850 Spider.
+                 Tal como o S600, o S800 estava disponível como cupê ou roadster e deu continuidade à tecnologia avançada de seus antecessores. O motor de 791 cc de 4 cilindros em linha produzia 70 cv (52 kW) a 8.000 rpm, tornando este o primeiro automóvel da Honda a 100 mph (160 km/h), mas ainda permitindo 35 mpg (6,7 L/100 km).
+             </p>
          </div>
          <div class="gallery">
              <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro2.png" alt="Car 1">
@@ -151,6 +161,28 @@
              <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro2.5.png" alt="Car 3">
          </div>
 
+     </div>
+
+
+     <div class="card">
+         <div class="car-container">
+             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Nissan Fairlady Z.png" id="NissanFairladyZ" alt="Car" class="car-image" onmouseover="showCarInfo()">
+             <div class="car-info" id="carInfo">
+                 <h2>Datsun 240Z / Nissan Fairlady Z</h2>
+                 <h6>Ano: 1969</h6>
+                 <h6>Cor: Preto e amarelo</h6>
+                 <h6>Preço: R$ 424.811,10</h6>
+                 <a href="#" class="buy-button">Comprar</a>
+             </div>
+             <p>A história da linha Z da Nissan começa em 1969 lá no Japão, onde nasceu o Nissan Fairlady Z. O famoso esportivo japonês teve seus princípios após a Nissan ter como objetivo se introduzir nos Estados Unidos, onde era outro mundo e tudo se baseava em carros grandes, luxuosos, beberrões e extremamente confortáveis, já que não sofreram sequelas da segunda guerra mundial. Como a Nissan não tinha nenhuma experiência neste tipo de carro, pois até então havia somente feito carros pequenos para uso urbano em plena reconstrução do Japão pós-guerra, teve que inventar algo novo e diferente que os americanos ainda não tivessem visto.
+                 Foi nesse cenário que surgiu o Datsun Z, um esportivo barato e atraente para parte dos estadunidenses.
+             </p>
+         </div>
+         <div class="gallery">
+             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro4.png" alt="Car 1">
+             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro4.2.png" alt="Car 2">
+             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro4.1.png" alt="Car 3">
+         </div>
      </div>
 
      <script src="/ConcessionariaDeCarros-main/public/js/perfilCarros.js"></script>

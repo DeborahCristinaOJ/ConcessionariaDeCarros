@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,9 @@
     <link rel="shortcut icon" href="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.ico" type="image/x-icon">
 
     <title>Komainu | Faça Login ou Cadastre-se</title>
+    <!-- Script do jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 
     <!--Links Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -18,23 +21,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Links CSS-->
     <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/login_cadastro.css?=1234" type="text/css" media="screen">
     <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/style.css?=1234" type="text/css" media="screen">
 
-
-    <!--Links Js-->
-    <script src="../../public/js/login.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Links Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
-    <!--Links Js-->
-    <script src="../../public/js/login.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Seu script login_cadastro.js -->
+    <script src="/ConcessionariaDeCarros-main/public/js/login_cadastro.js"></script>
 
 
 </head>
@@ -57,7 +55,7 @@
                         <a class="nav-link" href="/ConcessionariaDeCarros-main/src/index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login.php">Login / Cadastre-se</a>
+                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login_cadastro.php">Login | Cadastro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilFuncionario.php">Área de funcionários</a>
@@ -67,7 +65,7 @@
                     </li>
                 </ul>
                 <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <input name="pesquisar" id="pesquisar" class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                     <button class="btn btn-outline-success btn-pesquisar my-2 my-sm-0" type="submit">Pesquisar</button>
                 </form>
             </div>
@@ -76,19 +74,19 @@
 
 
     <!--Login e Cadastro-->
-    <div class="container-principal_loginCadastro  p-4">
+    <div class="container-principal_loginCadastro p-4">
         <div class="row main mt-5">
             <div class="col-md-6 p-5 " id="Cadastrar">
                 <h1 class="display-4 text-center ">Cadastre-se</h1>
-                <form class="d-flex justify-content-center mt-4" id="frmCadastro" name="frmCadastro" action="" method="post">
+                <form class="d-flex justify-content-center mt-4" id="frmCadastro" name="frmCadastro" method="post">
                     <div class="w-75 ">
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="emailCadastro">Email</label>
+                            <input type="email" id="emailCadastro" autocomplete="email">
                         </div>
                         <div class="form-group my-4">
-                            <label for="">Senha</label>
-                            <input type="password">
+                            <label for="senhaCadastro">Senha</label>
+                            <input id="senhaCadastro" type="password" autocomplete="current-password">
                         </div>
                         <button type="submit">Cadastrar</button>
                     </div>
@@ -99,22 +97,24 @@
                 </div>
             </div>
 
+            <!--LOGIN-->
+
             <div class="col-md-6 p-5 " id="login">
                 <h1 class="display-4 text-center ">Faça Login</h1>
                 <form class="d-flex justify-content-center mt-4" name="frmLogin" id="frmLogin" method="post">
                     <div class="w-75 ">
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email">
+                            <label for="emailLogin">Email</label>
+                            <input type="email" id="emailLogin" autocomplete="email">
                         </div>
                         <div class="form-group my-4">
-                            <label for="senha">Senha</label>
-                            <input type="password" name="senha">
+                            <label for="senhaLogin">Senha</label>
+                            <input type="password" id="senhaLogin" autocomplete="current-password">
                         </div>
                         <button type="submit">Login</button>
                         <div class="d-flex justify-content-between mt-5">
                             <a class="links" href="#" id="registrarLink">Criar uma conta?</a>
-                            <a class="links" href="#">Esqueceu a senha?</a>
+                            <a class="links" href="">Esqueceu a senha?</a>
                         </div>
                     </div>
                 </form>
@@ -127,8 +127,8 @@
     </div>
 
 
-    <!--Links Javascript-->
-    <script src="/ConcessionariaDeCarros-main/public/js/login.js"></script>
+
+
 
 </body>
 

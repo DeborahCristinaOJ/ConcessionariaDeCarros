@@ -1,64 +1,60 @@
-<?php 
+<?php
 
-include('../config/config.php');
+include('/ConcessionariaDeCarros-main/src/config/config.php');
 
-    class UsuarioDAO{
+class UsuarioDAO
+{
 
-        public function realizarLogin(usuario $u) : bool{
+    public function realizarLogin(usuario $u): bool
+    {
 
-            $email = $u -> getEmail();
-            $senha = $u -> getSenha();
 
-            $status = false;
+        $email = $u->getEmail();
+        $senha = $u->getSenha();
 
-            $sql = "SELECT * FROM usuario WHERE EMAIL = '$email' AND SENHA = '$senha'";
+        $status = false;
 
-            $DBConnection = new config();
+        $sql = "SELECT * FROM USUARIO WHERE EMAIL = '$email' AND SENHA = '$senha'";
 
-            $conn = $DBConnection -> getConn();
+        $DBConnection = new config();
 
-            $result = $conn -> query($sql);
+        $conn = $DBConnection->getConn();
 
-            if ($result -> num_rows == 1){
-                
-                header("location: index.php");            
-                $status = true;
+        $result = $conn->query($sql);
 
-            }
+        if ($result->num_rows == 1) {
 
-            $DBConnection -> fecharConn($conn);
-
-            return $status;
+            $status = true;
         }
 
-        public function cadastrarUsuario (usuario $u) : bool{
+        $DBConnection->fecharConn($conn);
 
-            $email = $u -> getEmail();
-            $senha = $u -> getSenha();
-
-            $status = false;
-
-            $sql = "INSERT INTO usuario (email, senha) VALUES ('".$email."', '".$senha."') LIMIT 1";
-
-            $DBConnection = new config();
-
-            $conn = $DBConnection->getConn();
-
-            $result = $conn->query($sql);
-
-            if ($result){
-
-                $status = true;
-            }
-
-            $DBConnection -> fecharConn($conn);
-
-            return $status;
-
-        }
-
-
+        return $status;
     }
 
+    public function cadastrarUsuario(usuario $u): bool
+    {
 
-?>
+        $email = $u->getEmail();
+        $senha = $u->getSenha();
+
+        $status = false;
+
+        $sql = "INSERT INTO USUARIO (email, senha) VALUES ('" . $email . "', '" . $senha . "')";
+
+        $DBConnection = new config();
+
+        $conn = $DBConnection->getConn();
+
+        $result = $conn->query($sql);
+
+        if ($result) {
+
+            $status = true;
+        }
+
+        $DBConnection->fecharConn($conn);
+
+        return $status;
+    }
+}

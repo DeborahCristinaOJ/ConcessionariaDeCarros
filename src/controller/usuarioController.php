@@ -1,17 +1,18 @@
 <?php
 
-include('../dao/usuarioDao.php');
-include('../model/usuario.php');
+include('/ConcessionariaDeCarros-main/src/config/config.php');
+include('/ConcessionariaDeCarros-main/src/dao/usuarioDao.php');
+include('/ConcessionariaDeCarros-main/src/model/usuario.php');
 
 if ($_POST['_action'] == "realizarLogin") {
 
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
+    $email = $_POST["emailLogin"];
+    $senha = $_POST["senhaLogin"];
 
     $u = new Usuario();
 
-    $u->setEmail($email);
-    $u->setSenha($senha);
+    $email = mysqli_real_escape_string($conn, $u->getEmail());
+    $senha = mysqli_real_escape_string($conn, $u->getSenha());
 
     $uDAO = new UsuarioDAO();
 
@@ -19,39 +20,10 @@ if ($_POST['_action'] == "realizarLogin") {
 
     if ($status) {
 
-        echo (int) $status . ",¿" . trim("../view/index.php");
+        echo (int) $status . ",¿" . trim("/ConcessionariaDeCarros-main/src/index.php");
         exit;
     } else {
-        echo (int) $status . ",¿" . trim("../view/login.php");
-        exit;
-    }
-}
-
-if ($_POST['_action'] == "cadastrarUsuario") {
-
-
-    $id = $_POST["id"];
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
-
-    $u = new Usuario();
-
-    $u->setEmail($email);
-    $u->setSenha($senha);
-
-    $uDAO = new usuarioDAO();
-
-    $status = $uDAO->cadastrarUsuario($u);
-
-    if ($status) {
-
-        $msg = "Novo usuário cadastrado com sucesso!";
-
-        echo (int) $status . ",¿" . $msg;
-        exit;
-    } else {
-
-        echo (int) $status . ".¿" . null;
+        echo (int) $status . ",¿" . trim("/ConcessionariaDeCarros-main/src/index.php");
         exit;
     }
 }

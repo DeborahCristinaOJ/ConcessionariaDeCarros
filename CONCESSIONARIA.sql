@@ -11,17 +11,17 @@ CREATE TABLE usuario
     primary key (id)
 );
 
-CREATE TABLE carro
-(
-	id int not null auto_increment,
-    ano_fabircacao varchar(45) not null,
-    quilometragem int not null,
-    combustivel varchar(45) not null,
-    cor varchar(10) not null,
-    placa varchar(7) not null,
-    descricao varchar(1000),
-    preco double not null,
-	primary key (id)
+CREATE TABLE VEICULO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(255) NOT NULL,
+    modelo TEXT NOT NULL,
+    ano_fabricacao INT NOT NULL,
+    quilometragem VARCHAR(255) NOT NULL,
+    combustivel VARCHAR(255) NOT NULL,
+    cor VARCHAR(255) NOT NULL,
+    placa VARCHAR(20) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10, 2) NOT NULL
 );
 
 CREATE TABLE funcionario
