@@ -63,7 +63,7 @@
 
     <!--Mascote interativo-->
     <div class="mascote-container">
-        <img src="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.png" alt="Mascote" id="mascote" class="mascote">
+        <img src="/Concession%C3%A1riaDeCarros/public/img/Logo/FavIcon.png" alt="Mascote" id="mascote" class="mascote">
         <div class="fala" id="fala">
             <div class="texto-fixo">
                 <b>

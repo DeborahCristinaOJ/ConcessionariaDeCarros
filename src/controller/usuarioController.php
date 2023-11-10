@@ -29,6 +29,7 @@ if ($_POST['_action'] == "realizarLogin") {
 
 if ($_POST['_action'] == "cadastrarUsuario") {
 
+
     $id = $_POST["id"];
     $email = $_POST["email"];
     $senha = $_POST["senha"];

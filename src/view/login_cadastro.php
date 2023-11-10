@@ -31,6 +31,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
+    <!--Links Js-->
+    <script src="../../public/js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -48,16 +54,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/index.php">Página Inicial</a>
+                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login_cadastro.php">Login | Cadastro</a>
+                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/login.php">Login / Cadastre-se</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilFuncionario.php">Área de funcionários</a>
+                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/perfilFuncionario.php">Área de funcionários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilCarros.php">Carros à venda</a>
+                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/perfilCarros.php">Carros à venda</a>
                     </li>
                 </ul>
                 <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
@@ -81,15 +87,16 @@
                             <input type="email" name="email" id="email">
                         </div>
                         <div class="form-group my-4">
-                            <label for="senha">Senha</label>
-                            <input type="password" name="senha" id="email">
+                            <label for="">Senha</label>
+                            <input type="password">
                         </div>
                         <button type="submit">Cadastrar</button>
-                        <div class="d-flex justify-content-between mt-5">
-                            <a class="links" href="#" id="loginLink">Já tem uma conta?</a>
-                        </div>
                     </div>
+
                 </form>
+                <div class="d-flex justify-content-between mt-5">
+                    <a class="links" href="#" id="loginLink">Já tem uma conta?</a>
+                </div>
             </div>
 
             <div class="col-md-6 p-5 " id="login">
@@ -121,7 +128,7 @@
 
 
     <!--Links Javascript-->
-    <script src="/ConcessionariaDeCarros-main/public/js/login.js"></script>
+    <script src="/Concession%C3%A1riaDeCarros/public/js/login.js"></script>
 
 </body>
 
