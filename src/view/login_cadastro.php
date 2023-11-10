@@ -54,16 +54,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/index.php">Página Inicial</a>
+                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/login.php">Login / Cadastre-se</a>
+                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login.php">Login / Cadastre-se</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/perfilFuncionario.php">Área de funcionários</a>
+                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilFuncionario.php">Área de funcionários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Concession%C3%A1riaDeCarros/src/view/perfilCarros.php">Carros à venda</a>
+                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilCarros.php">Carros à venda</a>
                     </li>
                 </ul>
                 <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
@@ -128,7 +128,7 @@
 
 
     <!--Links Javascript-->
-    <script src="/Concession%C3%A1riaDeCarros/public/js/login.js"></script>
+    <script src="/ConcessionariaDeCarros-main/public/js/login.js"></script>
 
 </body>
 
