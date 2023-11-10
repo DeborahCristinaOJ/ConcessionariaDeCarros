@@ -5,19 +5,17 @@ h4 {
   font-weight: 700;
 }
 
-/*Banner Principal*/
 #carouselExampleAutoplaying {
   background-color: goldenrod;
 }
 
-/*Apresentação*/
 .apresentacao-textos {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 25px;
-  background-color: darkred;
+  background-color: #8b0000;
   color: white;
 }
 .apresentacao-textos #titulo {
@@ -28,42 +26,73 @@ h4 {
   width: 65%;
 }
 
-/*Sobre nós*/
 .sobre-textos {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 25px;
-  margin: 60px;
+  margin: 50px;
 }
 .sobre-textos h3 {
   font-size: 50px;
 }
 .sobre-textos p {
   margin: 20px;
-  width: 65%;
+  width: 80%;
 }
 
-/*Depoimentos*/
 .depoimentos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  padding: 25px;
-  background-color: darkred;
   color: white;
+  background-color: darkred;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 .depoimentos h3 {
+  padding: 10px;
   font-size: 50px;
+  margin-bottom: 10px;
 }
-.depoimentos p {
-  margin: 20px;
-  width: 65%;
+.depoimentos .gallery {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-/*Destaques*/
+.depoimentos .gallery img {
+  border-radius: 20px;
+  width: 350px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 5px 20px 10px rgba(71, 0, 0, 0.651);
+}
+
+.depoimentos .gallery img:hover {
+  transform: scale(1.1);
+}
+
 .Destaques-textos h3 {
   margin: 20px;
   font-size: 50px;
@@ -107,9 +136,9 @@ h4 {
   width: auto;
   height: 300px;
 }
-/*.active {
-    transform: scale(1.1);
-}*/
+.active {
+  transform: scale(1.1);
+}
 .portas {
   display: flex;
   justify-content: center;

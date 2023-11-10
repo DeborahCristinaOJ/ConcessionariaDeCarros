@@ -13,17 +13,17 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 .navbar-brand {
-  margin-right: 50px;
-  justify-self: end;
+  margin-right: 70px;
+  justify-self: flex-end;
 }
 .navbar-nav {
-  display: flex;
   list-style: none;
-  margin-left: auto;
+  margin-left: 10px;
 }
 .nav-item {
-  margin-left: 20px;
+  margin-left: 100px;
   font-weight: 500;
+  margin: 10px;
 }
 .navbar-nav .nav-item .nav-link {
   color: black;

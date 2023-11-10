@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Concession%C3%A1riaDeCarros/public/img/DestaquesBanner/Fundo/fundov.jpg");
+  background-image: url('/ConcessionariaDeCarros-main/public/img/DestaquesBanner/Fundo/fundov.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -78,7 +78,7 @@ body {
   position: absolute;
   transform: translate(0px, -25px);
   border-radius: 25px;
-  background-image: url("/Concession%C3%A1riaDeCarros/public/img/DestaquesBanner/Fundo/LoginCadastroBanner.jpg");
+  background-image: url('/ConcessionariaDeCarros-main/public/img/DestaquesBanner/Fundo/LoginCadastroBanner.jpg');
   background-position: center;
   background-size: cover;
   transition: 0.5s;
