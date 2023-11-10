@@ -27,7 +27,7 @@
     <script src="../../public/js/login.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+
 
 </head>
 
@@ -80,14 +80,15 @@
                         </div>
                         <div class="form-group my-4">
                             <label for="senha">Senha</label>
-                            <input type="password" name="senha" id="email">
+                            <input type="password" name="senha" id="senha">
                         </div>
                         <button type="submit">Cadastrar</button>
-                        <div class="d-flex justify-content-between mt-5">
-                            <a class="links" href="#" id="loginLink">Já tem uma conta?</a>
-                        </div>
                     </div>
+                   
                 </form>
+                <div class="d-flex justify-content-between mt-5">
+                    <a class="links" href="#" id="loginLink">Já tem uma conta?</a>
+                </div>
             </div>
 
             <div class="col-md-6 p-5 " id="login">
@@ -120,9 +121,6 @@
 
     <!--Links Javascript-->
     <script src="/Concession%C3%A1riaDeCarros/public/js/login.js"></script>
-
-</body>
-
 </body>
 
 </html>

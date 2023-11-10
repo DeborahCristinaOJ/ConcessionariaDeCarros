@@ -1,3 +1,8 @@
+$(document).ready(function () {
+
+
+
+
 document.querySelectorAll("input").forEach((item) => {
   item.addEventListener("focus", function () {
     item.previousElementSibling.className = "label-selecionada";
@@ -29,7 +34,10 @@ document.getElementById("loginLink").addEventListener("click", function () {
   }
 });
 
-$(document).ready(function () {
+//  /////////////////////////////////////////////////////////////
+
+
+
   $(document).on("submit", "#frmLogin", function (e) {
     e.preventDefault();
 
@@ -37,8 +45,8 @@ $(document).ready(function () {
 
     if (validarCampos()) {
       $.ajax({
-        type: "post",
-        url: "../../src/crontroller/usuarioController.php",
+        type: 'post',
+        url: '../../src/controller/usuarioController.php',
         async: true,
         data:
           data +
@@ -69,9 +77,11 @@ $(document).ready(function () {
   });
 
   $(document).on("submit", "#frmCadastro", function (e) {
+
     e.preventDefault();
   
     var data = $(this).serialize();
+
   
     $.ajax({
       type: "post",
@@ -93,8 +103,7 @@ $(document).ready(function () {
         parametros["msg"] = param[1];
   
         $("#msg").fadeIn();
-  
-        initPage();
+        
       },
       error: function (error) {
         console.error("Erro:", error);
