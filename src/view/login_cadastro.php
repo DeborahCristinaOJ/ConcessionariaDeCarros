@@ -104,11 +104,11 @@
                     <div class="w-75 ">
                         <div class="form-group">
                             <label for="emailLogin">Email</label>
-                            <input type="email" id="emailLogin" autocomplete="email">
+                            <input type="email" id="emailLogin" name="emailLogin" autocomplete="email">
                         </div>
                         <div class="form-group my-4">
                             <label for="senhaLogin">Senha</label>
-                            <input type="password" id="senhaLogin" autocomplete="current-password">
+                            <input type="password" id="senhaLogin" name="senhaLogin" autocomplete="current-password">
                         </div>
                         <button type="submit">Login</button>
                         <div class="d-flex justify-content-between mt-5">

@@ -74,9 +74,9 @@ body {
 #overlay {
   background-color: #fff;
   height: 500px;
-  width: 750px;
+  width: 650px;
   position: absolute;
-  transform: translate(0px, -25px);
+  transform: translate(0px, -10px);
   border-radius: 25px;
   background-image: url('/ConcessionariaDeCarros-main/public/img/DestaquesBanner/Fundo/LoginCadastroBanner.jpg');
   background-position: center;

@@ -1,8 +1,6 @@
 <?php
-
-class Config
+class config
 {
-
 
     public $host = "localhost";
     public $username = "root";
@@ -35,3 +33,4 @@ class Config
         $conn->close();
     }
 }
+?>

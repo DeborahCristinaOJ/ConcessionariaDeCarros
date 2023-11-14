@@ -1,7 +1,7 @@
 <?php
-include('/ConcessionariaDeCarros-main/src/config/config.php');
-include('/ConcessionariaDeCarros-main/src/dao/usuarioDao.php');
-include('/ConcessionariaDeCarros-main/src/model/usuario.php');
+include('../config/config.php');
+include('../dao/usuarioDao.php');
+include('../model/usuario.php');
 
 if (isset($_POST['_action']) && $_POST['_action'] == "cadastrarUsuario") {
 

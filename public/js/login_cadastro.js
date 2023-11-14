@@ -50,7 +50,7 @@ $(document).ready(function () {
       if (validarCampos()) {
         $.ajax({
           type: "POST",
-          url: "/ConcessionariaDeCarros-main/src/controller/usuarioController.php",
+          url: "../../src/controller/usuarioController.php",
           async: true,
           data:
             data +
@@ -60,16 +60,17 @@ $(document).ready(function () {
             }),
           cache: true,
           success: function (dados) {
+
             var param = dados.split(",¿");
 
-            statusLogin = param[0];
+            statusLogin = param[0].trim;
             url = param[1];
 
             if (statusLogin == 1) {
-              location.href = url.replace(/^\s+|\s+$/gm, "");
+              alert("Deu certo")
             } else {
               var senha = $("#senhaLogin");
-
+alert ("aaa");
               var erromsg =
                 '<div class="erromsg">Usuário ou senha inválido!</div>';
 
@@ -115,11 +116,11 @@ $(document).ready(function () {
       e.preventDefault();
 
       var data = $("#frmCadastro").serialize();
-
+      
       if (validarCadastro()) {
         $.ajax({
           type: "post",
-          url: "/ConcessionariaDeCarros-main/src/controller/cadastroController.php",
+          url: "../../src/controller/usuarioController.php",
           async: true,
           data: data + "cadastrarUsuario",
           cache: false,
@@ -134,6 +135,7 @@ $(document).ready(function () {
               console.log("Depois do split");
 
               statusCadastro = param[0];
+              
 
               if (statusCadastro == 1) {
                 alert("Usuário cadastrado com sucesso!");

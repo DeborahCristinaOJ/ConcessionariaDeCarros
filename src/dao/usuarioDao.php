@@ -1,18 +1,23 @@
 <?php
 
-include('/ConcessionariaDeCarros-main/src/config/config.php');
+include('../config/config.php');
+
 
 class UsuarioDAO
 {
 
     public function realizarLogin(usuario $u): bool
     {
-
+        echo 'testes';
 
         $email = $u->getEmail();
         $senha = $u->getSenha();
 
         $status = false;
+
+
+echo $email;
+echo $senha;
 
         $sql = "SELECT * FROM USUARIO WHERE EMAIL = '$email' AND SENHA = '$senha'";
 
@@ -42,7 +47,7 @@ class UsuarioDAO
 
         $sql = "INSERT INTO USUARIO (email, senha) VALUES ('" . $email . "', '" . $senha . "')";
 
-        $DBConnection = new config();
+        $DBConnection = new ConfigDB();
 
         $conn = $DBConnection->getConn();
 
