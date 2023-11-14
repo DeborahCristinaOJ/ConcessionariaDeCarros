@@ -31,7 +31,7 @@
 
 
     <!-- Seu script login_cadastro.js -->
-    <script src="/ConcessionariaDeCarros-main/public/js/login_cadastro.js"></script>
+    <script src="../../public/js/login_cadastro.js"></script>
 
 
 </head>

@@ -1,12 +1,12 @@
 <?php
 
-include('../config/config.php');
+//include('../config/config.php');
 include('../dao/usuarioDao.php');
 include('../model/usuario.php');
 
-$erro = "Erro!";
-
-if (isset($_POST['_action']) == "realizarLogin") {
+//$erro = "Erro!";
+ 
+if (isset($_POST['_action1']) == "realizarLogin") {
 
     $email = $_POST["emailLogin"];
     $senha = $_POST["senhaLogin"];
@@ -16,12 +16,11 @@ if (isset($_POST['_action']) == "realizarLogin") {
     $u->setEmail($email);
     $u->setSenha($senha);
     
-    $uDAO = new UsuarioDAO();
+   $uDAO = new UsuarioDAO();
 
     $status = $uDAO->realizarLogin($u);
 
     if ($status) {
-
         echo (int) $status . ",¿" . trim("../index.php");
         exit;
     } else {
@@ -30,9 +29,7 @@ if (isset($_POST['_action']) == "realizarLogin") {
     }
 }
 
-if (($_POST['_action']) == "cadastrarUsuario") {
-
-    echo 'Chegou aqui';
+if (isset($_POST['_action']) == "cadastrarUsuario") {
 
         $email = $_POST["emailCadastro"];
         $senha = $_POST["senhaCadastro"];

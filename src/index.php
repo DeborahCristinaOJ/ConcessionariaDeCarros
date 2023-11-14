@@ -19,8 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Links CSS-->
-    <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/style.css?=1234">
-    <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/index.css?=1234">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/index.css">
 
 </head>
 
@@ -150,7 +150,7 @@
             <div class="carrosel-carros">
                 <div class="carousel-item active">
                     <div class="carro active">
-                        <img src="../public/img/Carros/" alt="Carro 1">
+                        <img src="../public/img/DestaquesBanner/Carros/Hino Contessa.png" alt="Carro 1">
                     </div>
                 </div>
                 <div class="carousel-item">

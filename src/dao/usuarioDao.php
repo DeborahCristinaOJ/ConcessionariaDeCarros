@@ -50,6 +50,8 @@ class UsuarioDAO
 
         $result = $conn->query($sql);
 
+echo $result;
+
         if ($result) {
 
             $status = true;

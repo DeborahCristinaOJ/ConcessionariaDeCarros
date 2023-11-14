@@ -40,33 +40,42 @@ $(document).ready(function () {
 //FAZER LOGIN DO USUÁRIO
 
 $(document).ready(function () {
+
+
   var formularioCadastro = $("#frmLogin");
+  
   if (formularioCadastro.length) {
+    
+    
     formularioCadastro.submit(function (e) {
+
       e.preventDefault();
 
       var data = $("#frmLogin").serialize();
 
-      if (validarCampos()) {
+      //if (validarCampos()) {
         $.ajax({
-          type: "POST",
+          type: "post",
           url: "../../src/controller/usuarioController.php",
           async: true,
           data:
             data +
             "&" +
             $.param({
-              _action: "realizarLogin",
+              _action1: "realizarLogin",
             }),
           cache: true,
           success: function (dados) {
+            //alert(dados);
+
             var param = dados.split(",¿");
 
-            statusLogin = param[0].trim;
+            statusLogin = param[0].trim();
             url = param[1];
 
             if (statusLogin == 1) {
               alert("Deu certo");
+              window.location = param[1];
             } else {
               var senha = $("#senhaLogin");
               alert("aaa");
@@ -77,7 +86,7 @@ $(document).ready(function () {
             }
           },
         });
-      }
+      //}
     });
 
     function validarCampos() {
@@ -108,11 +117,10 @@ $(document).ready(function () {
   //CADASTRAR USUÁRIO
 
   $(document).on("submit", "#frmCadastro", function (e) {
+
     e.preventDefault();
 
     var data = $(this).serialize();
-
-    alert(data);
 
     $.ajax({
       type: "post",
@@ -126,6 +134,9 @@ $(document).ready(function () {
         }),
       cache: true,
       success: function (dados) {
+
+        alert(dados);
+
         var parametros = [];
 
         var param = dados.split(",¿");
