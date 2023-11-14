@@ -8,16 +8,13 @@ class UsuarioDAO
 
     public function realizarLogin(usuario $u): bool
     {
-        echo 'testes';
+        
 
         $email = $u->getEmail();
         $senha = $u->getSenha();
 
         $status = false;
 
-
-echo $email;
-echo $senha;
 
         $sql = "SELECT * FROM USUARIO WHERE EMAIL = '$email' AND SENHA = '$senha'";
 
@@ -47,7 +44,7 @@ echo $senha;
 
         $sql = "INSERT INTO USUARIO (email, senha) VALUES ('" . $email . "', '" . $senha . "')";
 
-        $DBConnection = new ConfigDB();
+        $DBConnection = new Config();
 
         $conn = $DBConnection->getConn();
 

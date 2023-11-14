@@ -60,17 +60,16 @@ $(document).ready(function () {
             }),
           cache: true,
           success: function (dados) {
-
             var param = dados.split(",¿");
 
             statusLogin = param[0].trim;
             url = param[1];
 
             if (statusLogin == 1) {
-              alert("Deu certo")
+              alert("Deu certo");
             } else {
               var senha = $("#senhaLogin");
-alert ("aaa");
+              alert("aaa");
               var erromsg =
                 '<div class="erromsg">Usuário ou senha inválido!</div>';
 
@@ -106,78 +105,45 @@ alert ("aaa");
       return status;
     }
   }
-});
+  //CADASTRAR USUÁRIO
 
-//CADASTRAR USUÁRIO
-$(document).ready(function () {
-  var formularioCadastro = $("#frmCadastro");
-  if (formularioCadastro.length) {
-    formularioCadastro.submit(function (e) {
-      e.preventDefault();
+  $(document).on("submit", "#frmCadastro", function (e) {
+    e.preventDefault();
 
-      var data = $("#frmCadastro").serialize();
-      
-      if (validarCadastro()) {
-        $.ajax({
-          type: "post",
-          url: "../../src/controller/usuarioController.php",
-          async: true,
-          data: data + "cadastrarUsuario",
-          cache: false,
-          success: function (dados) {
-            console.log("Resposta do servidor:", dados);
+    var data = $(this).serialize();
 
-            try {
-              console.log("Antes do split");
+    alert(data);
 
-              var param = dados.split(",¿");
+    $.ajax({
+      type: "post",
+      url: "../../src/controller/usuarioController.php",
+      async: true,
+      data:
+        data +
+        "&" +
+        $.param({
+          _action: "cadastrarUsuario",
+        }),
+      cache: true,
+      success: function (dados) {
+        var parametros = [];
 
-              console.log("Depois do split");
+        var param = dados.split(",¿");
 
-              statusCadastro = param[0];
-              
+        parametros["status"] = param[0];
+        parametros["msg"] = param[1];
 
-              if (statusCadastro == 1) {
-                alert("Usuário cadastrado com sucesso!");
-              } else {
-                alert("Erro ao cadastrar usuário!");
-              }
-            } catch (error) {
-              console.error(
-                "Erro no processamento do sucesso da requisição:",
-                error
-              );
-              alert(
-                "Erro inesperado ao processar a resposta do servidor. Consulte o console para obter mais informações."
-              );
-            }
-          },
-        });
-      }
+        if (parametros["status"] == 1) {
+          $("#msg").html(parametros["msg"]);
+
+          $("#msg").fadeIn();
+        }
+      },
+      error: function (error) {
+        console.error("Erro:", error);
+      },
     });
 
-    function validarCadastro() {
-      var status = true;
-      $(".erromsg").remove();
-
-      var email = $("#emailCadastro");
-      if (!email.val() || !isValidEmail(email.val())) {
-        email.after('<div class="erromsg">Preencha um e-mail válido</div>');
-        status = false;
-      }
-
-      var senha = $("#senhaCadastro");
-      if (!senha.val()) {
-        senha.after('<div class="erromsg">Preencha a senha</div>');
-        status = false;
-      }
-
-      return status;
-    }
-
-    function isValidEmail(email) {
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-    }
-  }
+    
+  });
 });

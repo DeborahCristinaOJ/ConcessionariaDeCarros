@@ -77,15 +77,15 @@
         <div class="row main mt-5">
             <div class="col-md-6 p-5 " id="Cadastrar">
                 <h1 class="display-4 text-center ">Cadastre-se</h1>
-                <form class="d-flex justify-content-center mt-4" id="frmCadastro" name="frmCadastro" method="post">
+                <form class="d-flex justify-content-center mt-4" id="frmCadastro"  method="post">
                     <div class="w-75 ">
                         <div class="form-group">
                             <label for="emailCadastro">Email</label>
-                            <input type="email" id="emailCadastro" autocomplete="email">
+                            <input type="email" id="emailCadastro" name="emailCadastro" autocomplete="email">
                         </div>
                         <div class="form-group my-4">
                             <label for="senhaCadastro">Senha</label>
-                            <input id="senhaCadastro" type="password" autocomplete="current-password">
+                            <input id="senhaCadastro" type="password" name="senhaCadastro" autocomplete="current-password">
                         </div>
                         <button type="submit">Cadastrar</button>
                     </div>
