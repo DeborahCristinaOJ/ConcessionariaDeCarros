@@ -1,5 +1,5 @@
 body {
-  background-image: url("/ConcessionariaDeCarros-main/public/img/DestaquesBanner/Fundo/fundov.jpg");
+  background-image: url("../../public/img/DestaquesBanner/Fundo/fundov.jpg");
   background-position: center;
   background-size: cover;
 }

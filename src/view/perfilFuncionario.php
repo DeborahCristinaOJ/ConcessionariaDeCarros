@@ -8,6 +8,9 @@
 
     <link rel="icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    
 
     <title>Komainu | Funcionários</title>
 
@@ -15,15 +18,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!--Links CSS-->
     <link rel="stylesheet" href="../../public/css/perfilFuncionario.css" type="text/css" media="screen">
     <link rel="stylesheet" href="../../public/css/style.css" type="text/css" media="screen">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
     <!--Links Javascript-->
     <script src="../../public/js/perfilFuncionario.js"></script>
+
 
 </head>
 
@@ -82,7 +90,7 @@
         <h1>Perfil Veículo</h1>
         <h2>Cadastro de Veículo</h2>
         <form id="frmVeiculo" method="post">
-            <select class="veiculoFrm" name="marca">
+            <select class="veiculoFrm" name="marca" id="marca">
                 <option value="Toyota">Toyota</option>
                 <option value="Honda">Honda</option>
                 <option value="Nissan">Nissan</option>
@@ -94,14 +102,14 @@
                 <option value="Acura">Acura</option>
                 <option value="Infiniti">Infiniti</option>
             </select><br>
-            <textarea name="modelo" placeholder="Modelo"></textarea><br>
-            <input type="number" name="ano_fabricacao" placeholder="Ano de Fabricação" required><br>
-            <input type="text" name="quilometragem" placeholder="Quilometragem" required><br>
-            <input type="text" name="combustivel" placeholder="Combustível" required><br>
-            <input type="text" name="cor" placeholder="Cor" required><br>
-            <input type="text" name="placa" placeholder="Placa" required><br>
-            <textarea name="descricao" placeholder="Descrição"></textarea><br>
-            <input type="number" name="preco" placeholder="Preço" required><br>
+            <textarea name="modelo" placeholder="Modelo" id="modelo"></textarea><br>
+            <input type="number" name="ano_fabricacao" id="ano_fabricacao" placeholder="Ano de Fabricação" required><br>
+            <input type="text" name="quilometragem" id="quilometragem" placeholder="Quilometragem" required><br>
+            <input type="text" name="combustivel" id="combustivel" placeholder="Combustível" required><br>
+            <input type="text" name="cor" id="cor" placeholder="Cor" required><br>
+            <input type="text" name="placa" id="placa" placeholder="Placa" required><br>
+            <textarea name="descricao" id="descricao" placeholder="Descrição"></textarea><br>
+            <input type="number" id="preco" name="preco" placeholder="Preço" required><br>
 
             <button type="submit">Cadastrar Veículo</button>
         </form>
