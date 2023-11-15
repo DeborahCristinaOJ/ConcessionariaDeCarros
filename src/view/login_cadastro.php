@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.ico" type="image/x-icon">
+    <link rel="icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
 
     <title>Komainu | Faça Login ou Cadastre-se</title>
     <!-- Script do jQuery -->
@@ -22,8 +22,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--Links CSS-->
-    <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/login_cadastro.css?=1234" type="text/css" media="screen">
-    <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/style.css?=1234" type="text/css" media="screen">
+    <link rel="stylesheet" href="../../public/css/login_cadastro.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../../public/css/style.css" type="text/css" media="screen">
 
     <!-- Links Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -43,7 +43,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/ConcessionariaDeCarros-main/public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
+                <img src="../../public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,16 +51,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/index.php">Página Inicial</a>
+                        <a class="nav-link" href="../index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login_cadastro.php">Login | Cadastro</a>
+                        <a class="nav-link" href="../view/login_cadastro.php">Login | Cadastro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilFuncionario.php">Área de funcionários</a>
+                        <a class="nav-link" href="../view/perfilFuncionario.php">Área de funcionários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilCarros.php">Carros à venda</a>
+                        <a class="nav-link" href="../view/perfilCarros.php">Carros à venda</a>
                     </li>
                 </ul>
                 <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
@@ -77,7 +77,7 @@
         <div class="row main mt-5">
             <div class="col-md-6 p-5 " id="Cadastrar">
                 <h1 class="display-4 text-center ">Cadastre-se</h1>
-                <form class="d-flex justify-content-center mt-4" id="frmCadastro"  method="post">
+                <form class="d-flex justify-content-center mt-4" id="frmCadastro" method="post">
                     <div class="w-75 ">
                         <div class="form-group">
                             <label for="emailCadastro">Email</label>

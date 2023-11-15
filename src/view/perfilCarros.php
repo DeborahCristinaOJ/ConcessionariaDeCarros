@@ -6,8 +6,9 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="icon" href="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.ico" type="image/x-icon">
-     <link rel="shortcut icon" href="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.ico" type="image/x-icon">
+     <link rel="icon" href="../public/img/Logo/FavIcon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="../public/img/Logo/FavIcon.ico" type="image/x-icon">
+
 
      <title>Komainu | Carros</title>
      <!--Links Bootstrap-->
@@ -18,8 +19,8 @@
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <!--Links CSS-->
-     <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/style.css?=1234" type="text/css" media="screen">
-     <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/perfilCarros.css?=1234" type="text/css" media="screen">
+     <link rel="stylesheet" href="../../public/css/perfilCarros.css" type="text/css" media="screen">
+     <link rel="stylesheet" href="../../public/css/style.css" type="text/css" media="screen">
 
 
  </head>
@@ -32,7 +33,7 @@
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container">
              <a class="navbar-brand" href="#">
-                 <img src="/ConcessionariaDeCarros-main/public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
+             <img src="../../public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
              </a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
@@ -40,16 +41,16 @@
              <div class="collapse navbar-collapse" id="navbarNav">
                  <ul class="navbar-nav mr-auto">
                      <li class="nav-item active">
-                         <a class="nav-link" href="/ConcessionariaDeCarros-main/src/index.php">Página Inicial</a>
+                         <a class="nav-link" href="../index.php">Página Inicial</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login_cadastro.php">Login | Cadastro</a>
+                         <a class="nav-link" href="../view/login_cadastro.php">Login | Cadastro</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilFuncionario.php">Área de funcionários</a>
+                         <a class="nav-link" href="../view/perfilFuncionario.php">Área de funcionários</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilCarros.php">Carros à venda</a>
+                         <a class="nav-link" href="../view/perfilCarros.php">Carros à venda</a>
                      </li>
                  </ul>
                  <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
@@ -97,7 +98,7 @@
 
      <div class="card">
          <div class="car-container">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/1999 Mitsubishi Eclipse GSX.png" alt="Car" class="car-image" onmouseover="showCarInfo()">
+             <img src="../../public/img/Carros/1999 Mitsubishi Eclipse GSX.png" alt="Car" class="car-image" onmouseover="showCarInfo()">
              <div class="car-info" id="carInfo">
                  <h2>1999 Mitsubishi Eclipse GSX</h2>
                  <h6>Ano: 1995</h6>
@@ -114,16 +115,16 @@
              </p>
          </div>
          <div class="gallery">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro1.2.png" alt="Car 1">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro1.3.png" alt="Car 2">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro1.png" alt="Car 3">
+             <img src="../../public/img/Carros/Carro1.2.png" alt="Car 1">
+             <img src="../../public/img/Carros/Carro1.3.png" alt="Car 2">
+             <img src="../../public/img/Carros/Carro1.png" alt="Car 3">
          </div>
 
      </div>
 
      <div class="card">
          <div class="car-container">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Lexus LFA.png" alt="Car" class="car-image" onmouseover="showCarInfo()">
+             <img src="../../public/img/Carros/Lexus LFA.png" alt="Car" class="car-image" onmouseover="showCarInfo()">
              <div class="car-info" id="carInfo">
                  <h2>Lexus LFA</h2>
                  <h6>Ano: 2010</h6>
@@ -134,16 +135,16 @@
              <p>O Lexus LFA é a versão definitiva do protótipo do super desportivo Lexus LF-A. Tem um motor 4.8 V10 com 560cv e que atinge as 9900 RPM. A velocidade máxima é de 325 km/h. Custa cerca de 450.000€. Existem apenas 300 em todo o mundo.</p>
          </div>
          <div class="gallery">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro3.2.png" alt="Car 1">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro3.png" alt="Car 2">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro3.3.png" alt="Car 3">
+             <img src="../../public/img/Carros/Carro3.2.png" alt="Car 1">
+             <img src="../../public/img/Carros/Carro3.png" alt="Car 2">
+             <img src="../../public/img/Carros/Carro3.3.png" alt="Car 3">
          </div>
 
      </div>
 
      <div class="card">
          <div class="car-container">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Honda S800.png" alt="Car" class="car-image" id="HondaS800" onmouseover="showCarInfo()">
+             <img src="../../public/img/Carros/Honda S800.png" alt="Car" class="car-image" id="HondaS800" onmouseover="showCarInfo()">
              <div class="car-info" id="carInfo">
                  <h2>Honda S800</h2>
                  <h6>Ano: 1968</h6>
@@ -156,9 +157,9 @@
              </p>
          </div>
          <div class="gallery">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro2.png" alt="Car 1">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro2.4.png" alt="Car 2">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro2.5.png" alt="Car 3">
+             <img src="../../public/img/Carros/Carro2.png" alt="Car 1">
+             <img src="../../public/img/Carros/Carro2.4.png" alt="Car 2">
+             <img src="../../public/img/Carros/Carro2.5.png" alt="Car 3">
          </div>
 
      </div>
@@ -166,7 +167,7 @@
 
      <div class="card">
          <div class="car-container">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Nissan Fairlady Z.png" id="NissanFairladyZ" alt="Car" class="car-image" onmouseover="showCarInfo()">
+             <img src="../../public/img/Carros/Nissan Fairlady Z.png" id="NissanFairladyZ" alt="Car" class="car-image" onmouseover="showCarInfo()">
              <div class="car-info" id="carInfo">
                  <h2>Datsun 240Z / Nissan Fairlady Z</h2>
                  <h6>Ano: 1969</h6>
@@ -179,13 +180,13 @@
              </p>
          </div>
          <div class="gallery">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro4.png" alt="Car 1">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro4.2.png" alt="Car 2">
-             <img src="/ConcessionariaDeCarros-main/public/img/Carros/Carro4.1.png" alt="Car 3">
+             <img src="../../public/img/Carros/Carro4.png" alt="Car 1">
+             <img src="../../public/img/Carros/Carro4.2.png" alt="Car 2">
+             <img src="../../public/img/Carros/Carro4.1.png" alt="Car 3">
          </div>
      </div>
 
-     <script src="/ConcessionariaDeCarros-main/public/js/perfilCarros.js"></script>
+     <script src="../../public/js/perfilCarros.js"></script>
 
  </body>
 

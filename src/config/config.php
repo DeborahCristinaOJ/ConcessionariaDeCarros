@@ -4,7 +4,7 @@ class config
 
     public $host = "localhost";
     public $username = "root";
-    public $password = "admin";
+    public $password = "236598/*Cri";
     public $database = "concessionaria";
 
     private $conn;

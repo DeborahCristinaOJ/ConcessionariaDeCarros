@@ -7,7 +7,7 @@ $(document).ready(function () {
     if (validarCamposVeiculo()) {
       $.ajax({
         type: "post",
-        url: "/ConcessionariaDeCarros-main/src/controller/veiculoController.php",
+        url: "../../src/controller/veiculoController.php",
         async: true,
         data:
           data +

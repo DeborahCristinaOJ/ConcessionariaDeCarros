@@ -53,7 +53,7 @@ $(document).ready(function () {
 
       var data = $("#frmLogin").serialize();
 
-      //if (validarCampos()) {
+      if (validarCampos()) {
         $.ajax({
           type: "post",
           url: "../../src/controller/usuarioController.php",
@@ -66,7 +66,6 @@ $(document).ready(function () {
             }),
           cache: true,
           success: function (dados) {
-            //alert(dados);
 
             var param = dados.split(",¿");
 
@@ -78,7 +77,7 @@ $(document).ready(function () {
               window.location = param[1];
             } else {
               var senha = $("#senhaLogin");
-              alert("aaa");
+              alert("Usuário ou senha inválidos.");
               var erromsg =
                 '<div class="erromsg">Usuário ou senha inválido!</div>';
 
@@ -86,7 +85,7 @@ $(document).ready(function () {
             }
           },
         });
-      //}
+      }
     });
 
     function validarCampos() {
@@ -116,12 +115,21 @@ $(document).ready(function () {
   }
   //CADASTRAR USUÁRIO
 
-  $(document).on("submit", "#frmCadastro", function (e) {
+  $(document).ready(function () {
+
+
+    var formularioCadastro = $("#frmCadastro");
+    
+    if (formularioCadastro.length) {
+      
+      
+      formularioCadastro.submit(function (e) {
 
     e.preventDefault();
 
     var data = $(this).serialize();
 
+    if (validarCampos()) {
     $.ajax({
       type: "post",
       url: "../../src/controller/usuarioController.php",
@@ -153,8 +161,33 @@ $(document).ready(function () {
       error: function (error) {
         console.error("Erro:", error);
       },
-    });
+    })};
+
+    function validarCampos() {
+      var status = true;
+
+      $(".erromsg").remove();
+
+      var email = $("#emailCadastro");
+      var senha = $("#senhaCadastro");
+
+      var erromsg = '<div class="erromsg">Preencha o campo <span></span></div>';
+
+      if (!email.val()) {
+        email.after(erromsg);
+        email.next().find("span").text("email");
+        status = false;
+      }
+
+      if (!senha.val()) {
+        senha.after(erromsg);
+        senha.next().find("span").text("senha");
+        status = false;
+      }
+
+      return status;
+    }
 
     
   });
-});
+}})})

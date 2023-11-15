@@ -1,10 +1,8 @@
 <?php
 
-//include('../config/config.php');
 include('../dao/usuarioDao.php');
 include('../model/usuario.php');
 
-//$erro = "Erro!";
  
 if (isset($_POST['_action1']) == "realizarLogin") {
 

@@ -30,7 +30,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/ConcessionariaDeCarros-main/public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
+                <img src="../public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/index.php">Página Inicial</a>
+                        <a class="nav-link" href="../src/index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login_cadastro.php">Login | Cadastro</a>
+                        <a class="nav-link" href="./view/login_cadastro.php">Login | Cadastro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilFuncionario.php">Área de funcionários</a>
+                        <a class="nav-link" href="./view/perfilFuncionario.php">Área de funcionários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="view/perfilCarros.php">Carros à venda</a>
+                        <a class="nav-link" href="./view/perfilCarros.php">Carros à venda</a>
                     </li>
                 </ul>
                 <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">

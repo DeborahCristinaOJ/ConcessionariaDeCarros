@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.ico" type="image/x-icon">
+    <link rel="icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
 
     <title>Komainu | Funcionários</title>
 
@@ -19,11 +19,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Links CSS-->
-    <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/perfilFuncionario.css?=1234" type="text/css" media="screen">
-    <link rel="stylesheet" href="/ConcessionariaDeCarros-main/public/css/style.css?=1234" type="text/css" media="screen">
+    <link rel="stylesheet" href="../../public/css/perfilFuncionario.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../../public/css/style.css" type="text/css" media="screen">
 
     <!--Links Javascript-->
-    <script src="/ConcessionariaDeCarros-main/public/js/perfilFuncionario.js"></script>
+    <script src="../../public/js/perfilFuncionario.js"></script>
 
 </head>
 
@@ -35,7 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/ConcessionariaDeCarros-main/public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
+                <img src="../../public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,16 +43,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/index.php">Página Inicial</a>
+                        <a class="nav-link" href="../index.php">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/login_cadastro.php">Login | Cadastro</a>
+                        <a class="nav-link" href="../view/login_cadastro.php">Login | Cadastro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilFuncionario.php">Área de funcionários</a>
+                        <a class="nav-link" href="../view/perfilFuncionario.php">Área de funcionários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ConcessionariaDeCarros-main/src/view/perfilCarros.php">Carros à venda</a>
+                        <a class="nav-link" href="../view/perfilCarros.php">Carros à venda</a>
                     </li>
                 </ul>
                 <form class="form-inline btn-barra-pesquisa my-2 my-lg-0">
@@ -65,7 +65,7 @@
 
     <!--Mascote interativo-->
     <div class="mascote-container">
-        <img src="/ConcessionariaDeCarros-main/public/img/Logo/FavIcon.png" alt="Mascote" id="mascote" class="mascote">
+        <img src="../../public/img/Logo/FavIcon.png" alt="Mascote" id="mascote" class="mascote">
         <div class="fala" id="fala">
             <div class="texto-fixo">
                 <b>
