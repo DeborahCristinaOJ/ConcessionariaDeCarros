@@ -6,8 +6,8 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="icon" href="../public/img/Logo/FavIcon.ico" type="image/x-icon">
-     <link rel="shortcut icon" href="../public/img/Logo/FavIcon.ico" type="image/x-icon">
+     <link rel="icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="../../public/img/Logo/FavIcon.ico" type="image/x-icon">
 
 
      <title>Komainu | Carros</title>
@@ -18,6 +18,7 @@
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
      <!--Links CSS-->
      <link rel="stylesheet" href="../../public/css/perfilCarros.css" type="text/css" media="screen">
      <link rel="stylesheet" href="../../public/css/style.css" type="text/css" media="screen">
@@ -33,7 +34,7 @@
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container">
              <a class="navbar-brand" href="#">
-             <img src="../../public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
+                 <img src="../../public/img/Logo/KomainuLogo.png" alt="Logo" width="80">
              </a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
